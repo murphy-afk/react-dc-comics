@@ -18,7 +18,7 @@ function NavBar() {
           <a href="#">COMICS</a>
         </li>
         <li>
-          <a href="#">MOVIES</a>
+          <a className={style.active} href="#">MOVIES</a>
         </li>
         <li>
           <a href="#">TV</a>

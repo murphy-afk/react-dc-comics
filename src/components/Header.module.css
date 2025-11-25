@@ -33,6 +33,10 @@ a {
   color: rgb(68, 66, 66);
 }
 
+.list a.active {
+  border-bottom: 2px solid rgb(129, 129, 233);
+}
+
 
 @media screen and (max-width: 730px) {
   nav {
