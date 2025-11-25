@@ -1,4 +1,4 @@
-import "./Main.css";
+import style from "./Main.module.css";
 import DigitalComics from "../assets/img/buy-comics-digital-comics.png";
 import Merchandise from "../assets/img/buy-comics-merchandise.png";
 import ShopLocation from "../assets/img/buy-comics-shop-locator.png";
@@ -8,7 +8,7 @@ import Visa from "../assets/img/buy-dc-power-visa.svg";
 
 function Content() {
   return (
-    <div className="content-container">
+    <div className={style.container}>
       <p>Content goes here...</p>
     </div>
   )
@@ -17,9 +17,9 @@ function Content() {
 function Links() {
   return (
     // nav?
-    <div className="links-container">
+    <div className={style["links-container"]}>
 
-      <nav className="links">
+      <nav className={style.links}>
         <a href="#">
           <img src={DigitalComics} alt="digital comics" />
           DIGITAL COMICS
@@ -47,7 +47,7 @@ function Links() {
 
 export default function Main() {
   return (
-    <main className="main">
+    <main className={style.main}>
       <Content />
       <Links />
     </main>
