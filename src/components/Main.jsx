@@ -1,6 +1,8 @@
+import "./Main.css";
+
 export default function Main() {
   return (
-    <main>
+    <main className="main">
       <p>main</p>
     </main>
   )
