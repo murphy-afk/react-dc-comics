@@ -5,13 +5,16 @@
 }
 
 .footer-container::before {
-  content: url("../assets/img/dc-logo-bg.png");
-    position: absolute;
-    overflow: hidden;
-    top: -10%;
-    left: 50%;
-    z-index: -1;
-    opacity: 0.7;
+  content: "";
+  background-image: url("/src/assets/img/dc-logo-bg.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  top: -15%;
+  left: 50%;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .footer-content-container {
@@ -39,4 +42,45 @@ h3 {
 .col a {
   color: rgb(118, 118, 118);
   font-size: 0.7rem;
+}
+
+.footer-bottom {
+  background-color: rgb(47, 45, 45);
+  width: 100%;
+}
+
+.footer-bottom-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+    color: rgb(70, 70, 235);
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.socials img {
+  height: 20px;
+  width: 20px;
+}
+
+.btn {
+  border: 1px solid rgb(56, 56, 246);
+  color: rgb(224, 224, 224);
+  font-weight: 600;
+  padding: 0.5em 0.7em;
 }
