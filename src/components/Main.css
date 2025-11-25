@@ -3,9 +3,43 @@
 }
 
 .content-container {
-  padding: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   width: 100%;
   background-color: rgb(23, 23, 23);
-  color: rgb(229, 224, 224);
+  color: rgb(129, 123, 123);
   font-weight: 800;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.links-container {
+  background-color: rgb(68, 120, 197);
+}
+
+a img {
+  max-width: 30px;
+  max-height: 50px;
+}
+
+.links {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  gap: 1em;
+}
+
+.links a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
