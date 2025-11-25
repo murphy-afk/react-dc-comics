@@ -43,3 +43,9 @@ a img {
   justify-content: center;
   gap: 1em;
 }
+
+@media screen and (max-width: 730px) {
+  .main {
+    padding-top: 0px;
+  }
+}

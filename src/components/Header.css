@@ -33,3 +33,16 @@ a {
   color: rgb(68, 66, 66);
 }
 
+@media screen and (max-width: 730px) {
+  nav {
+    display: none;
+  }
+
+  .header-content {
+    justify-content: center;
+  }
+
+  .header {
+    position: absolute;
+  }
+}
