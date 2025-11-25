@@ -65,7 +65,7 @@ function FooterBottom() {
           <a href="#" className="btn">SIGN-UP NOW</a>
         </div>
         <div className="socials-container">
-          <p>FOLLOW US</p>
+          <p className="follow-us">FOLLOW US</p>
           <ul className="socials">
             <li><a href="#"><img src={Facebook} alt="facebook" /></a></li>
             <li><a href="#"><img src={Twitter} alt="twitter" /></a></li>

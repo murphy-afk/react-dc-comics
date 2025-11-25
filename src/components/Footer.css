@@ -84,3 +84,9 @@ h3 {
   font-weight: 600;
   padding: 0.5em 0.7em;
 }
+
+@media screen and (max-width: 730px) {
+  .follow-us {
+    display: none;
+  }
+}
