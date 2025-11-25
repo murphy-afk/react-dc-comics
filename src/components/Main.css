@@ -1,3 +1,11 @@
 .main {
   padding-top: 100px;
 }
+
+.content-container {
+  padding: 3em;
+  width: 100%;
+  background-color: rgb(23, 23, 23);
+  color: rgb(229, 224, 224);
+  font-weight: 800;
+}
