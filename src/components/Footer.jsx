@@ -1,4 +1,4 @@
-import "./Footer.css"
+import style from "./Footer.module.css"
 import Facebook from "../assets/img/footer-facebook.png"
 import Twitter from "../assets/img/footer-twitter.png"
 import Youtube from "../assets/img/footer-youtube.png"
@@ -7,9 +7,9 @@ import Periscope from "../assets/img/footer-periscope.png"
 
 function FooterTop() {
   return (
-    <div className="footer-content-container">
-      <div className="col-container">
-        <div className="col">
+    <div className={style["footer-content-container"]}>
+      <div className={style["col-container"]}>
+        <div className={style.col}>
           <h3>DC COMICS</h3>
           <ul>
             <li><a href="#">Characrets</a></li>
@@ -26,7 +26,7 @@ function FooterTop() {
             <li><a href="#">Shop DC Collectibles</a></li>
           </ul>
         </div>
-        <div className="col">
+        <div className={style.col}>
           <h3>DC</h3>
           <ul>
             <li><a href="#">Terms of use</a></li>
@@ -42,7 +42,7 @@ function FooterTop() {
             <li><a href="#">Contact us</a></li>
           </ul>
         </div>
-        <div className="col">
+        <div className={style.col}>
           <h3>SITES</h3>
           <ul>
             <li><a href="#">DC</a></li>
@@ -59,14 +59,14 @@ function FooterTop() {
 
 function FooterBottom() {
   return (
-    <div className="footer-bottom">
-      <div className="footer-bottom-container">
+    <div className={style["footer-bottom"]}>
+      <div className={style["footer-bottom-container"]}>
         <div>
-          <a href="#" className="btn">SIGN-UP NOW</a>
+          <a href="#" className={style.btn}>SIGN-UP NOW</a>
         </div>
-        <div className="socials-container">
-          <p className="follow-us">FOLLOW US</p>
-          <ul className="socials">
+        <div className={style["socials-container"]}>
+          <p className={style["follow-us"]}>FOLLOW US</p>
+          <ul className={style.socials}>
             <li><a href="#"><img src={Facebook} alt="facebook" /></a></li>
             <li><a href="#"><img src={Twitter} alt="twitter" /></a></li>
             <li><a href="#"><img src={Youtube} alt="youtube" /></a></li>
@@ -81,7 +81,7 @@ function FooterBottom() {
 
 export default function Footer() {
   return (
-    <footer className="footer-container">
+    <footer className={style["footer-container"]}>
       <FooterTop />
       <FooterBottom />
     </footer>
