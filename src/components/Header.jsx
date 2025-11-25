@@ -1,5 +1,5 @@
 import LogoImg from "../assets/img/dc-logo.png";
-import "./Header.css";
+import style from "./Header.module.css";
 
 function Logo() {
   return (
@@ -10,7 +10,7 @@ function Logo() {
 function NavBar() {
   return (
     <nav>
-      <ul className="link-list">
+      <ul className={style.list}>
         <li>
           <a href="#">CHARACTERS</a>
         </li>
@@ -48,8 +48,8 @@ function NavBar() {
 
 export default function Header() {
   return (
-    <header className="header">
-      <div className="header-content">
+    <header className={style.header}>
+      <div className={style.content}>
         <Logo />
         <NavBar />
       </div>
