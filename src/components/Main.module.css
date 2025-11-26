@@ -17,7 +17,7 @@ p {
 }
 
 .links-container {
-  background-color: rgb(68, 120, 197);
+  background-color: rgb(12, 124, 236);
 }
 
 a img {
@@ -51,6 +51,16 @@ a img {
   }
 }
 
+.series-container::before {
+  content: "CURRENT SERIES";
+  background-color: rgb(12, 124, 236);
+  color: rgb(223, 224, 225);
+  font-size: 0.8rem;
+  padding: 0.6em 0.8em;
+  position: relative;
+  top: -60px;
+}
+
 .series-container {
   width: 80%;
   margin: 0 auto;
@@ -74,6 +84,7 @@ figure {
 figcaption {
   font-size: 0.7rem;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .thumb {
@@ -83,7 +94,7 @@ figcaption {
 .banner {
   background-image: url("../assets/img/jumbotron.jpg");
   background-size: cover;
-height: 200px;
+  height: 200px;
   width: 100%;
 }
 
@@ -91,11 +102,12 @@ height: 200px;
   .banner {
     height: 100px;
   }
+
   .col {
     width: calc(100% / 4 - 60px / 4);
   }
 
   figcaption {
-  font-size: 0.5rem;
-}
+    font-size: 0.5rem;
+  }
 }

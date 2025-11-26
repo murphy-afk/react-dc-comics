@@ -63,7 +63,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 1em;
-  color: rgb(70, 70, 235);
+  color: rgb(12, 124, 236);
   font-weight: 600;
 }
 
@@ -79,7 +79,7 @@ h3 {
 }
 
 .btn {
-  border: 1px solid rgb(56, 56, 246);
+  border: 1px solid rgb(12, 124, 236);
   color: rgb(224, 224, 224);
   font-weight: 600;
   padding: 0.5em 0.7em;
