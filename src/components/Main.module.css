@@ -50,3 +50,26 @@ a img {
     align-items: flex-start;
   }
 }
+
+.series-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+.col {
+  width: calc(100% / 6 - 40px / 6);
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.5rem;
+}
