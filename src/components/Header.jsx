@@ -4,7 +4,7 @@ import { navLinks } from "./linksData"
 
 function Logo() {
   return (
-    <img src={LogoImg} alt="logo" />
+    <img src={LogoImg} alt="logo" className={style.img} />
   )
 }
 

@@ -19,7 +19,7 @@ function Content() {
         {comics.map((comic) => (
           <li key={comic.id} className={style.col}>
             <figure>
-              <img src={comic.thumb} alt={comic.description} />
+              <img src={comic.thumb} alt={comic.description} className={style.thumb} />
               <figcaption>{comic.series}</figcaption>
             </figure>
           </li>
