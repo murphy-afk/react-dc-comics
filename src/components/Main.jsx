@@ -4,26 +4,28 @@ import Merchandise from "../assets/img/buy-comics-merchandise.png";
 import ShopLocation from "../assets/img/buy-comics-shop-locator.png";
 import Subscriptions from "../assets/img/buy-comics-subscriptions.png";
 import Visa from "../assets/img/buy-dc-power-visa.svg";
-import  comics  from "./comics"
+import comics from "./comics"
 
+function Banner() {
+  return (
+    <div className={style.banner}>
+    </div>
+  )
+}
 
 function Content() {
   return (
     <div className={style.container}>
-      <div>
-        {/* banner */}
-      </div>
       <div className={style["series-container"]}>
-        {/* thumbs */}
         <ul className={style.list}>
-        {comics.map((comic) => (
-          <li key={comic.id} className={style.col}>
-            <figure>
-              <img src={comic.thumb} alt={comic.description} className={style.thumb} />
-              <figcaption>{comic.series}</figcaption>
-            </figure>
-          </li>
-        ))}
+          {comics.map((comic) => (
+            <li key={comic.id} className={style.col}>
+              <figure>
+                <img src={comic.thumb} alt={comic.description} className={style.thumb} />
+                <figcaption>{comic.series}</figcaption>
+              </figure>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
@@ -62,6 +64,7 @@ function Links() {
 export default function Main() {
   return (
     <main className={style.main}>
+      <Banner />
       <Content />
       <Links />
     </main>

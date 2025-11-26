@@ -64,7 +64,7 @@ a img {
 }
 
 .col {
-  width: calc(100% / 6 - 100px / 6);
+  width: calc(100% / 6 - 60px / 6);
 }
 
 figure {
@@ -78,4 +78,24 @@ figcaption {
 
 .thumb {
   aspect-ratio: 1;
+}
+
+.banner {
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-size: cover;
+height: 200px;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .banner {
+    height: 100px;
+  }
+  .col {
+    width: calc(100% / 4 - 60px / 4);
+  }
+
+  figcaption {
+  font-size: 0.5rem;
+}
 }
