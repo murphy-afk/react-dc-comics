@@ -13,7 +13,7 @@ function NavBar() {
     <nav className={style.nav}>
       <ul className={style.list}>
         {navLinks.map((link, index) => (
-          <li key={index}><a className={link.active} href="">{link.title}</a></li>
+          <li key={index}><a className={`${style.link} ${link.active}`} href="">{link.title}</a></li>
         ))}
       </ul>
     </nav>
