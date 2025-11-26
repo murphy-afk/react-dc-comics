@@ -1,8 +1,11 @@
 .footer-container {
-  background-image: url("../assets/img/footer-bg.jpg");
+  background-image: url("/src/assets/img/dc-logo-bg.png"),
+  url("../assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
-.footer-container::before {
+/* .footer-container::before {
   content: "";
   background-image: url(/src/assets/img/dc-logo-bg.png);
   background-size: contain;
@@ -10,11 +13,11 @@
   background-repeat: no-repeat;
   width: 60%;
   height: 70%;
-  /* top: -10%; */
+  top: -10%;
   left: 50%;
   z-index: 0;
   opacity: 0.7;
-}
+} */
 
 .footer-content-container {
   width: 80%;
