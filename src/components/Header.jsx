@@ -10,7 +10,7 @@ function Logo() {
 
 function NavBar() {
   return (
-    <nav>
+    <nav className={style.nav}>
       <ul className={style.list}>
         {navLinks.map((link, index) => (
           <li key={index}><a className={link.active} href="">{link.title}</a></li>

@@ -39,13 +39,20 @@ a:hover {
 }
 
 @media screen and (max-width: 730px) {
-  nav {
+  /* nav {
     display: none;
-  }
+  } */
 
   .content {
-    justify-content: center;
+    justify-content: space-between;
   }
+
+  .list {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+
 
   .header {
     position: absolute;

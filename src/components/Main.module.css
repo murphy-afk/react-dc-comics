@@ -134,3 +134,9 @@ figcaption {
     font-size: 0.5rem;
   }
 }
+
+@media screen and (max-width: 380px) {
+   .col {
+    width: calc(100% / 3 - 60px / 3);
+  }
+}
