@@ -27,7 +27,16 @@ function Content() {
             </li>
           ))}
         </ul>
+        <Button />
       </div>
+    </div>
+  )
+}
+
+function Button() {
+  return (
+    <div className={style["btn-container"]}>
+    <button className={style.btn}>LOAD MORE</button>
     </div>
   )
 }
