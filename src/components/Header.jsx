@@ -1,5 +1,6 @@
 import LogoImg from "../assets/img/dc-logo.png";
 import style from "./Header.module.css";
+import { navLinks } from "./linksData"
 
 function Logo() {
   return (
@@ -11,36 +12,9 @@ function NavBar() {
   return (
     <nav>
       <ul className={style.list}>
-        <li>
-          <a href="#">CHARACTERS</a>
-        </li>
-        <li>
-          <a href="#">COMICS</a>
-        </li>
-        <li>
-          <a className={style.active} href="#">MOVIES</a>
-        </li>
-        <li>
-          <a href="#">TV</a>
-        </li>
-        <li>
-          <a href="#">GAMES</a>
-        </li>
-        <li>
-          <a href="#">COLLECTIBLES</a>
-        </li>
-        <li>
-          <a href="#">VIDEOS</a>
-        </li>
-        <li>
-          <a href="#">FANS</a>
-        </li>
-        <li>
-          <a href="#">NEWS</a>
-        </li>
-        <li>
-          <a href="#">SHOP</a>
-        </li>
+        {navLinks.map((link, index) => (
+          <li key={index}><a className={link.active} href="">{link.title}</a></li>
+        ))}
       </ul>
     </nav>
   )

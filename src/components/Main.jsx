@@ -16,9 +16,7 @@ function Content() {
 
 function Links() {
   return (
-    // nav?
     <div className={style["links-container"]}>
-
       <nav className={style.links}>
         <a href="#">
           <img src={DigitalComics} alt="digital comics" />

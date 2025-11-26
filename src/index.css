@@ -10,3 +10,7 @@ body {
 img {
   max-width: 100%;
 }
+
+.true {
+  border-bottom: 2px solid rgb(129, 129, 233);
+}
