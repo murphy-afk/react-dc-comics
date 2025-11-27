@@ -4,7 +4,8 @@ import Merchandise from "../assets/img/buy-comics-merchandise.png";
 import ShopLocation from "../assets/img/buy-comics-shop-locator.png";
 import Subscriptions from "../assets/img/buy-comics-subscriptions.png";
 import Visa from "../assets/img/buy-dc-power-visa.svg";
-import comics from "./comics"
+import comics from "../data/comics"
+import PrintCard from "./printCard";
 
 function Banner() {
   return (
@@ -19,12 +20,12 @@ function Content() {
       <div className={style["series-container"]}>
         <ul className={style.list}>
           {comics.map((comic) => (
-            <li key={comic.id} className={style.col}>
-              <figure>
-                <img src={comic.thumb} alt={comic.description} className={style.thumb} />
-                <figcaption>{comic.series}</figcaption>
-              </figure>
-            </li>
+            <PrintCard
+              key={comic.id}
+              thumb={comic.thumb}
+              description={comic.description}
+              series={comic.series}
+            />
           ))}
         </ul>
         <Button />
@@ -36,7 +37,7 @@ function Content() {
 function Button() {
   return (
     <div className={style["btn-container"]}>
-    <button className={style.btn}>LOAD MORE</button>
+      <button className={style.btn}>LOAD MORE</button>
     </div>
   )
 }

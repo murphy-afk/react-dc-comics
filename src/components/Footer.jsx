@@ -4,7 +4,7 @@ import Twitter from "../assets/img/footer-twitter.png"
 import Youtube from "../assets/img/footer-youtube.png"
 import Pinterest from "../assets/img/footer-pinterest.png"
 import Periscope from "../assets/img/footer-periscope.png"
-import { dcComicsLinkList, shopLinks, dcLinks, sitesLinks } from "./linksData"
+import { dcComicsLinkList, shopLinks, dcLinks, sitesLinks } from "../data/linksData"
 
 function FooterTop() {
   return (

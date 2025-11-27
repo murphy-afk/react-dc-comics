@@ -1,6 +1,6 @@
 import LogoImg from "../assets/img/dc-logo.png";
 import style from "./Header.module.css";
-import { navLinks } from "./linksData"
+import { navLinks } from "../data/linksData"
 
 function Logo() {
   return (
