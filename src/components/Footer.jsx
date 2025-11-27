@@ -5,6 +5,7 @@ import Youtube from "../assets/img/footer-youtube.png"
 import Pinterest from "../assets/img/footer-pinterest.png"
 import Periscope from "../assets/img/footer-periscope.png"
 import { dcComicsLinkList, shopLinks, dcLinks, sitesLinks } from "../data/linksData"
+import LinkList from "./LinkList"
 
 function FooterTop() {
   return (
@@ -14,17 +15,21 @@ function FooterTop() {
           <h3>DC COMICS</h3>
           <ul>
             {dcComicsLinkList.map((link, index) => (
-              <li key={index}>
-                <a href="">{link.title}</a>
-              </li>
+              <LinkList
+                key={index}
+                path={link.path}
+                title={link.title}
+              />
             ))}
           </ul>
           <h3>SHOP</h3>
           <ul>
             {shopLinks.map((link, index) => (
-              <li key={index}>
-                <a href="">{link.title}</a>
-              </li>
+              <LinkList
+                key={index}
+                path={link.path}
+                title={link.title}
+              />
             ))}
           </ul>
         </div>
@@ -32,9 +37,11 @@ function FooterTop() {
           <h3>DC</h3>
           <ul>
             {dcLinks.map((link, index) => (
-              <li key={index}>
-                <a href="">{link.title}</a>
-              </li>
+              <LinkList
+                key={index}
+                path={link.path}
+                title={link.title}
+              />
             ))}
           </ul>
         </div>
@@ -42,9 +49,11 @@ function FooterTop() {
           <h3>SITES</h3>
           <ul>
             {sitesLinks.map((link, index) => (
-              <li key={index}>
-                <a href="">{link.title}</a>
-              </li>
+              <LinkList
+                key={index}
+                path={link.path}
+                title={link.title}
+              />
             ))}
           </ul>
         </div>

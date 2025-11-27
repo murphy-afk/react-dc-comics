@@ -1,7 +1,7 @@
 import LogoImg from "../assets/img/dc-logo.png";
 import style from "./Header.module.css";
 import { navLinks } from "../data/linksData"
-
+import LinkList from "./LinkList";
 function Logo() {
   return (
     <img src={LogoImg} alt="logo" className={style.img} />
@@ -13,7 +13,12 @@ function NavBar() {
     <nav className={style.nav}>
       <ul className={style.list}>
         {navLinks.map((link, index) => (
-          <li key={index}><a className={`${style.link} ${link.active}`} href="">{link.title}</a></li>
+          <LinkList
+            key={index}
+            path={link.path}
+            title={link.title}
+            className={`${style.link} ${link.active}`}
+          />
         ))}
       </ul>
     </nav>
