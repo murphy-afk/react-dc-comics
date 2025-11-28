@@ -4,10 +4,10 @@ import Twitter from "../assets/img/footer-twitter.png"
 import Youtube from "../assets/img/footer-youtube.png"
 import Pinterest from "../assets/img/footer-pinterest.png"
 import Periscope from "../assets/img/footer-periscope.png"
-import { dcComicsLinkList, shopLinks, dcLinks, sitesLinks } from "../data/linksData"
 import LinkList from "./LinkList"
 
-function FooterTop() {
+
+function FooterTop({ dcComicsLinkList, shopLinks, dcLinks, sitesLinks }) {
   return (
     <div className={style["footer-content-container"]}>
       <div className={style["col-container"]}>
@@ -84,10 +84,13 @@ function FooterBottom() {
   )
 }
 
-export default function Footer() {
+export default function Footer({ dcComicsLinkList, shopLinks, dcLinks, sitesLinks }) {
   return (
     <footer className={style["footer-container"]}>
-      <FooterTop />
+      <FooterTop dcComicsLinkList={dcComicsLinkList}
+        shopLinks={shopLinks}
+        dcLinks={dcLinks}
+        sitesLinks={sitesLinks} />
       <FooterBottom />
     </footer>
   )
