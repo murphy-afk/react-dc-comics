@@ -4,7 +4,6 @@ import Merchandise from "../assets/img/buy-comics-merchandise.png";
 import ShopLocation from "../assets/img/buy-comics-shop-locator.png";
 import Subscriptions from "../assets/img/buy-comics-subscriptions.png";
 import Visa from "../assets/img/buy-dc-power-visa.svg";
-import comics from "../data/comics"
 import PrintCard from "./printCard";
 
 function Banner() {
@@ -14,7 +13,7 @@ function Banner() {
   )
 }
 
-function Content() {
+function Content({ comics }) {
   return (
     <div className={style.container}>
       <div className={style["series-container"]}>
@@ -71,11 +70,11 @@ function Links() {
   )
 }
 
-export default function Main() {
+export default function Main({ comics }) {
   return (
     <main className={style.main}>
       <Banner />
-      <Content />
+      <Content comics={comics} />
       <Links />
     </main>
   )
